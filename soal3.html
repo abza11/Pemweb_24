@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menghitung Biaya Parkir </title>
+</head>
+<body>
+    <h1>Menghitung Biaya Parkir</h1>
+    <label for="masuk">Jam masuk</label>
+    <input type="time" id="masuk" onkeyup="parkir"><br>
+
+    <label for="keluar">Jam keluar</label>
+    <input type="time" id="keluar" onkeyup="parkir"><br>
+
+    <p>Kendaraan Anda Parkir Selama <span id="LamaParkir">0</span> Jam</p>
+    <p>Biaya Parkir Anda Sebesar  Rp. <span id="BiayaParkir">0</span></p>
+
+    <!------ java script --------->
+
+    <script>
+        function Parkir() {
+            let masuk = document.getElementById("masuk").value;
+            let keluar = document.getElementById("keluar").value;
+        
+            let JamMasuk = parseInt(masuk.split(':')[0]);
+            let MenitMasuk = parseInt(masuk.split(':')[1]);
+            let JamKeluar = parseInt(keluar.split(':')[0]);
+            let MenitKeluar = parseInt(keluar.split(':')[1]);
+        
+            // Hitung selisih waktu dalam menit
+            let selisihMenit = (JamKeluar * 60 + MenitKeluar) - (JamMasuk * 60 + MenitMasuk);
+            if (selisihMenit < 0) {
+                // Jika jam keluar lebih kecil dari jam masuk, berarti parkir semalaman
+                selisihMenit += 24 * 60;
+            }
+            let lamaParkir = selisihMenit / 60;
+        
+            // Hitung biaya parkir
+            let biayaParkir = 3000;
+            if (lamaParkir > 2) {
+                biayaParkir += (lamaParkir - 2) * 1000;
+            }
+        
+            // Tampilkan hasil
+            document.getElementById('LamaParkir').innerHTML = lamaParkir.toFixed(2);
+            document.getElementById('BiayaParkir').innerHTML = biayaParkir;
+        }
+
+
+ 
+    </script>   
+
+    
+</body>
+</html>

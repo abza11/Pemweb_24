@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML 5</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        fieldset {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .profile-image {
+            border: 2px solid black;
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        .profile-info {
+            margin: 0 70px 0 20px;
+        }
+
+        .social-media {
+            text-align: right;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        .thumbnail {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .thumbnail img {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>I4F Directory Profile Page</legend>
+
+        <header>
+            <div class="profile-image">
+                <img src="abza.jpg.jpg" width="150" height="250" alt="My Photo">
+            </div>
+
+            <div class="profile-info">
+                <h1>Profile Name</h1>
+                <h1>Dhani Abza</h1>
+                <p>Alamat: Tenjo Bogor, Jawa Barat, Indonesia</p>
+                <p>Email: <a href="mailto:abzadhani11.com">abzadhani11.com</a></p>
+                <p>Telepon: <a href="tel:081617412834">081617412834</a></p>
+            </div>
+
+            <div class="social-media">
+                <h3><u>Sosmed</u></h3>
+                <p><a href="#">abzaaa11</a>: Instagram</p>
+                <p><a href="#">Dhani Abza</a>: Facebook</p>
+                <p><a href="#">dhanipake_h</a>: Tiktok</p>
+                <p><a href="#">Dhani Abza</a>: Github</p>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <section>
+                    <p>
+                        Perkenalkan nama saya Dhani Abza, saya adalah seorang mahasiswa di <strong>STT-NF</strong> Prodi Sistem Informasi.
+                        Asal sekolah saya dari <strong>Ma Manahajissudat</strong>. Fun fact tentang saya adalah saya tidak bisa kayang.
+                        Hobi saya main futsal dan membaca. Pengalaman kerja: saya pernah menjadi Mengabdi/Mengajar di Pondok Pesantren Arafah yang terletak di Kota Sungai Penuh, Kab. Kerinci, Provinsi Jambi.
+                        Cita-cita saya ingin menjadi orang yang berdampak baik bagi orang banyak dan menjadi kebanggaan orang tua saya sendiri.
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        Kutipan favorit saya adalah: "Semua orang bisa jadi apapun, jangan pernah memandang orang dengan sebelah mata, dan ketika kita punya kendala, selalu ingat bahwa Allah SWT punya kendali."
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <fieldset>
+                <legend>YouTube Embed</legend>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            </fieldset>
+
+            <fieldset>
+                <legend>Blog Thumbnail</legend>
+                <div class="thumbnail">
+                    <a href="#"><img src="thumbnail.jpg" alt="Thumbnail"></a>
+                    <a href="https://www.google.com/search?client
+                    =firefox&q=dhani+abza+blog+thumbnail" target="_blank">Lihat Blog</a>
+                </div>
+</fieldset>
+</footer>
+
+</body>
+
+</html>

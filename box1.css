@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS BOX 2 - Flex</title>
+    <link rel="stylesheet" href= "box1.css">
+<style>
+     img{
+       width: 150px
+     }
+    container{
+      display: flex;
+      justify: content: center;
+    }
+    .img{
+       margin-right:10px;
+       }
+</style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="img">
+      <img class= "img-item" src= "Garudajpg.PNG" alt="Burung Garuda">
+      </div>
+       <div class="img">
+      <img class="img-item"src="Garudajpg.PNG" alt="Burung Garuda ">
+      </div>
+       <div class="img">
+      <img class"img-item" src="Garudajpg.PNG" alt="Burung Garuda">
+      </div>
+       <div class="img-item">
+      <img src="Garudajpg.PNG" alt="Burung Garuda">
+      </div>
+      
+      
+      
+      
+      
+</body>
+</html>
